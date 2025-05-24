@@ -1,6 +1,5 @@
 from PySide6.QtWidgets import QApplication, QWidget
 
-from main import main_window
 
 
 class MainWin(QWidget):
@@ -10,5 +9,7 @@ class MainWin(QWidget):
 
 my_app = QApplication()
 win = MainWin()
+
+
 win.show()
 my_app.exec()
