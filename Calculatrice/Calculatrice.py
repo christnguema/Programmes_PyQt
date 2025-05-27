@@ -1,5 +1,5 @@
 from PySide6 import QtCore
-from PySide6.QtGui import QShortcut, QKeySequence
+from PySide6.QtGui import QShortcut, QKeySequence, QIcon
 from PySide6.QtWidgets import QApplication, QVBoxLayout, QWidget, QGridLayout, QLineEdit, QPushButton, QSizePolicy
 
 OPERATIONS = {"/", "+", "-", "x"}
@@ -25,6 +25,7 @@ class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Calculatrice")
+        self.setWindowIcon(QIcon("cico.ico"))
         self.setStyleSheet("""
             background-color: rgb(20, 20, 20);
             color: rgb(220, 220, 220);
