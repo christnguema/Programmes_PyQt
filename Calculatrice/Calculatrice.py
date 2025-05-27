@@ -24,7 +24,7 @@ BUTTONS = {"C": (1, 0, 1, 1),
 class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Calculatrice")
+        self.setWindowTitle("N²C - Calculatrice")
         self.setWindowIcon(QIcon("cico.ico"))
         self.setStyleSheet("""
             background-color: rgb(20, 20, 20);
