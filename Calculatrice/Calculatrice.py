@@ -26,6 +26,7 @@ class MainWindow(QWidget):
         super().__init__()
         self.setWindowTitle("N²C - Calculatrice")
         self.setWindowIcon(QIcon("cico.ico"))
+        self.setMinimumSize(300, 400)
         self.setStyleSheet("""
             background-color: rgb(20, 20, 20);
             color: rgb(220, 220, 220);
